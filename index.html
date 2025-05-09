@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لا للتنمر</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+
+    .hero {
+      background-color: #fcbf49;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    form#quizForm {
+      margin-top: 1rem;
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form#quizForm div {
+      margin-bottom: 1rem;
+    }
+
+    form#quizForm p {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    form#quizForm label {
+      display: block;
+      padding: 5px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    form#quizForm label:hover {
+      background-color: #eaeaea;
+      border-radius: 5px;
+    }
+
+    form#quizForm button {
+      background-color: #d62828;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form#quizForm button:hover {
+      background-color: #a71d2a;
+    }
+
+    #quizResult {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: green;
+    }
+
+    section {
+      padding: 2rem;
+      background-color: #ffffff;
+      margin: 1rem auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 900px;
+    }
+
+    section h2 {
+      color: #d62828;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      padding-right: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #003049;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .slogan {
+      font-size: 1.2rem;
+      background-color: #f0f0f0;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      color: #003049;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>لا للتنمر</h1>
+    <p class="slogan">💬 الاحترام يبدأ بك.. لا تكن سببًا في ألم أحد.</p>
+    <nav>
+      <ul>
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#types">أنواع التنمر</a></li>
+        <li><a href="#how">كيف تتصرف؟</a></li>
+        <li><a href="#effects">أثر التنمر</a></li>
+        <li><a href="#parents">دور الأهل</a></li>
+        <li><a href="#quiz">الأسئلة</a></li>
+        <li><a href="#story">قصه قصيره</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>معًا ضد التنمر</h2>
+    <p>التنمر ظاهرة خطيرة تؤثر على الصحة النفسية والجسدية للطلاب. من حق كل إنسان أن يشعر بالأمان في مدرسته ومجتمعه. دعونا نتعاون لحماية بعضنا.</p>
+  </section>
+
+  <section>
+    <h2>ما هو التنمر؟</h2>
+    <p>هو أي سلوك متكرر يهدف إلى إيذاء شخص آخر نفسيًا أو جسديًا، سواء بالكلام، أو الأفعال، أو عبر الإنترنت. يشمل السخرية، الإقصاء، التهديد، أو الإيذاء البدني المباشر.</p>
+  </section>
+
+  <section>
+    <h2>أسباب التنمر</h2>
+    <ul>
+      <li>ضعف في المهارات الاجتماعية لدى المتنمر.</li>
+      <li>رغبة في فرض السيطرة أو الشعور بالقوة.</li>
+      <li>تأثر بعنف في البيت أو المجتمع.</li>
+      <li>الغيرة أو التمييز بسبب الشكل أو اللغة أو الدين.</li>
+    </ul>
+  </section>
+
+  <section id="types">
+    <h2>أنواع التنمر</h2>
+    <ul>
+      <li>👊 <strong>جسدي:</strong> كالضرب أو الدفع أو التخويف.</li>
+      <li>🗣️ <strong>لفظي:</strong> كالشتائم، أو الإهانة، أو النكات المؤذية.</li>
+      <li>💻 <strong>إلكتروني:</strong> مثل التنمر عبر الرسائل أو وسائل التواصل.</li>
+      <li>🚫 <strong>اجتماعي:</strong> مثل العزل أو نشر الشائعات.</li>
+    </ul>
+  </section>
+
+  <section id="how">
+    <h2>كيف تتصرف إذا تعرضت للتنمر؟</h2>
+    <ol>
+      <li>ابقَ هادئًا ولا ترد بالعنف.</li>
+      <li>أخبر شخصًا تثق به كمعلم أو ولي أمر.</li>
+      <li>تجنب التواجد مع المتنمر وحدك.</li>
+      <li>كوّن صداقات تحميك وتدعمك.</li>
+      <li>لا تشعر بالخجل، فالمشكلة في المتنمر، وليس فيك.</li>
+    </ol>
+  </section>
+
+  <section id="effects">
+    <h2>أثر التنمر على الضحية</h2>
+    <p>يمكن أن يسبب التنمر مشاعر حزن، قلق، خوف، وعزلة. قد يفقد الطالب ثقته بنفسه، ويؤثر ذلك على تحصيله الدراسي وصحته النفسية.</p>
+  </section>
+
+  <section id="parents">
+    <h2>ما دور الأهل والمدرسة؟</h2>
+    <ul>
+      <li>تشجيع الأطفال على الحديث عن مشاعرهم.</li>
+      <li>مراقبة السلوك وتقديم الدعم عند الحاجة.</li>
+      <li>تعليم الطلاب أهمية الاحترام والتعاطف.</li>
+      <li>اتخاذ إجراءات فورية ضد حالات التنمر.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>أسئلة شائعة</h2>
+    <ul>
+      <li><strong>هل يمكن أن يكون الطفل المتنمر ضحية سابقًا؟</strong> نعم، أحيانًا يتنمر الأطفال لأنهم تعرضوا سابقًا للعنف أو التجاهل.</li>
+      <li><strong>هل التجاهل كافٍ؟</strong> لا دائمًا، من المهم أن تتحدث وتطلب المساعدة.</li>
+      <li><strong>ما دور الأصدقاء؟</strong> دورهم كبير! الصداقة الحقيقية تحمي وتدعم.</li>
+    </ul>
+  </section>
+ <section id="story"> 
+    <h2>قصه عن التمر</h2>
+    <video width="640" height="360" controls>
+      <source src="bully.mp4">
+    </video>
+</section>
+  <section id="quiz">
+    <h2>اختبر معلوماتك عن التنمر</h2>
+    <form id="quizForm">
+      <div>
+        <p>1. ما هو التنمر؟</p>
+        <label><input type="radio" name="q1" value="a"> المزاح مع الأصدقاء</label>
+        <label><input type="radio" name="q1" value="b"> إيذاء شخص متكررًا عمدًا</label>
+        <label><input type="radio" name="q1" value="c"> اللعب في الفسحة</label>
+      </div>
+      <div>
+        <p>2. أي من التالي يُعد تنمرًا إلكترونيًا؟</p>
+        <label><input type="radio" name="q2" value="a"> إرسال تهديدات عبر الإنترنت</label>
+        <label><input type="radio" name="q2" value="b"> قراءة كتاب رقمي</label>
+        <label><input type="radio" name="q2" value="c"> استخدام الحاسوب في المدرسة</label>
+      </div>
+      <div>
+        <p>3. من يمكنه مساعدتك إذا تعرضت للتنمر؟</p>
+        <label><input type="radio" name="q3" value="a"> زميل متنمر</label>
+        <label><input type="radio" name="q3" value="b"> معلم أو ولي أمر</label>
+        <label><input type="radio" name="q3" value="c"> الصمت وعدم الكلام</label>
+      </div>
+      <div>
+        <p>4. من أنواع التنمر:</p>
+        <label><input type="radio" name="q4" value="a"> جسدي ولفظي فقط</label>
+        <label><input type="radio" name="q4" value="b"> جسدي، لفظي، إلكتروني، واجتماعي</label>
+        <label><input type="radio" name="q4" value="c"> لا يوجد أنواع للتنمر</label>
+      </div>
+      <div>
+        <p>5. ما أثر التنمر على الضحية؟</p>
+        <label><input type="radio" name="q5" value="a"> زيادة الثقة بالنفس</label>
+        <label><input type="radio" name="q5" value="b"> تحسن الدرجات</label>
+        <label><input type="radio" name="q5" value="c"> مشاعر حزن وقلق وعزلة</label>
+      </div>
+      <br>
+      <button type="button" onclick="checkAnswers()">تحقق من الإجابات</button>
+      <p id="quizResult" style="font-weight:bold; color:green;"></p>
+    </form>
+  </section>
+
+
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: 'b',
+        q2: 'a',
+        q3: 'b',
+        q4: 'b',
+        q5: 'c'
+      };
+      let score = 0;
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) {
+          score++;
+        }
+      }
+      document.getElementById('quizResult').textContent = `أحسنت! نتيجتك: ${score} من 5`;
+    }
+  </script>
+</body>
+</html>
