@@ -236,7 +236,7 @@
   </section>
  <section id="story"> 
     <h2>قصه عن التمر</h2>
-    <video width="640" height="360" controls>
+    <video id="myVideo" width="640" height="360" controls>
       <source src="bully.mp4">
     </video>
 </section>
@@ -282,6 +282,8 @@
 
 
   <script>
+    let vid = document.getElementById("myVideo");
+    vid.volume = 0.1;
     function checkAnswers() {
       const answers = {
         q1: 'b',
@@ -297,7 +299,7 @@
           score++;
         }
       }
-      document.getElementById('quizResult').textContent = ` نتيجتك: ${score} من 5`;
+      document.getElementById('quizResult').textContent = `نتيجتك: ${score} من 5`;
     }
   </script>
 </body>
